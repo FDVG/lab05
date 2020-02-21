@@ -7,9 +7,10 @@ project(banking)
 
 enable_testing()
 add_subdirectory(gtest/googletest)
+add_subdirectory(tests/)
 
-file(GLOB ${PROJECT_NAME}_TEST_SOURCES tests/*.cpp)
-add_executable(check ${${PROJECT_NAME}_TEST_SOURCES})
-target_link_libraries(check ${PROJECT_NAME} gtest_main)
+file(GLOB tests/*.cpp)
+add_executable(check tests/banking.cpp)
+target_link_libraries(check banking googletest-distribution)
 add_test(NAME check COMMAND check)
 
