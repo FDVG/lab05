@@ -3,14 +3,16 @@ cmake_minimum_required(VERSION 3.4)
 set(CMAKE_CXX_STANDART 11)
 set(CMAKE_CXX_STANDART_REQUIRED ON)
 
-project(banking)
+project(test)
 
 enable_testing()
-add_subdirectory(gtest/googletest)
-add_subdirectory(tests/)
+include(${CMAKE_CURRENT_SOURCE_DIR}/gtest/googletest/CMakeLists.txt)
+include(${CMAKE_CURRENT_SOURCE_DIR}/tests/)
+include(${CMAKE_CURRENT_SOURCE_DIR}/banking/)
 
-file(GLOB tests/*.cpp)
+add_library(banking STATIC ${CMAKE_CURRENT_SOURCE_DIR}/banking/Account.cpp ${CMAKE_CURRENT_SOURCE_DIR}/banking/Transaction.cpp)
+
 add_executable(check tests/banking.cpp)
 target_link_libraries(check banking googletest-distribution)
-add_test(NAME check COMMAND check)
+#add_test(NAME check COMMAND check)
 
