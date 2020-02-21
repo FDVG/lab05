@@ -7,7 +7,7 @@ project(test)
 
 enable_testing()
 include(${CMAKE_CURRENT_SOURCE_DIR}/gtest/googletest/CMakeLists.txt)
-include(${CMAKE_CURRENT_SOURCE_DIR}/tests/)
+include(/tests/)
 include(${CMAKE_CURRENT_SOURCE_DIR}/banking/)
 
 add_library(banking STATIC ${CMAKE_CURRENT_SOURCE_DIR}/banking/Account.cpp ${CMAKE_CURRENT_SOURCE_DIR}/banking/Transaction.cpp)
