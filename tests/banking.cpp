@@ -84,7 +84,7 @@ TEST(TRANSACTION, All)
 			EXPECT_EQ(s1, s2);
 		}
 
-		Transaction t2 : public t2; //тут
+		Transaction t2 :: public t2; //тут
 		t2.Credit(ac2, 1000);
 
 		EXPECT_EQ(ac2.GetBalance(), 1000);
