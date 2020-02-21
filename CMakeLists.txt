@@ -40,7 +40,6 @@ endif()
 project(test)
 
 enable_testing()
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/third-party/gtest/)
 include_directories(/tests)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/banking)
 #include(${CMAKE_CURRENT_SOURCE_DIR}/third-party/gtest/CMakeLists.txt)
