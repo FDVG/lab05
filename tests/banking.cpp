@@ -42,7 +42,7 @@ TEST(ACCOUUNT, All)
 
 TEST(TRANSACTION, All)
 {
-	public:
+	
 		Account ac1(100, 100);
 		Account ac2(100, 300);
 		Transaction t1;
@@ -83,7 +83,7 @@ TEST(TRANSACTION, All)
 			std::string s2 = e.what();
 			EXPECT_EQ(s1, s2);
 		}
-
+    public:
 		Transaction t2;
 		t2.Credit(ac2, 1000);
 
