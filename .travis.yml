@@ -19,6 +19,11 @@ addons:
       - clang-3.6
 
 script:
+- sudo apt update
+- sudo apt install build-essential
+- sudo apt-get install manpages-dev
+- gcc --version
+
 - mkdir _build
 - cd _build
 - cmake ../
