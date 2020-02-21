@@ -20,6 +20,6 @@ addons:
 
 script:
 - cmake CMakeLists.txt
- - cmake --build _build --target tests -- ARGS=--verbose
+- cmake --build _build --target tests -- ARGS=--verbose
 after_success:
 - coveralls --exclude lib --exclude tests --gcov-options '\-lp'
