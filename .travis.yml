@@ -21,6 +21,6 @@ addons:
 script:
 - mkdir _build
 - cmake .
-- cmake --build _build
+- cmake --build ./
 after_success:
 - coveralls --exclude lib --exclude tests --gcov-options '\-lp'

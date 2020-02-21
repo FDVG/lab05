@@ -1,0 +1,14 @@
+Полезные линки для лабы:
+
+http://artlang.net/post/unit-testirovaniye-c++-mock-obyekty-google-c++-mocking-framework/
+
+http://myworkonly.blogspot.com/2016/12/google-test-gmock.html?m=1
+
+https://chromium.googlesource.com/external/github.com/google/googletest/+/HEAD/googlemock/docs/for_dummies.md
+
+https://chromium.googlesource.com/external/github.com/google/googletest/+/HEAD/googlemock/docs/cook_book.md
+
+https://github.com/google/googletest/blob/master/googletest/README.md
+
+https://github.com/google/googletest/blob/master/googlemock/docs/cheat_sheet.md
+
