@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDART_REQUIRED ON)
 project(test)
 
 enable_testing()
-include(${CMAKE_CURRENT_SOURCE_DIR}/gtest/googletest/CMakeLists.txt)
+include(${CMAKE_CURRENT_SOURCE_DIR}/third-party/gtest/CMakeLists.txt)
 include(/tests/)
 include(${CMAKE_CURRENT_SOURCE_DIR}/banking/)
 
