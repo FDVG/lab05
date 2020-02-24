@@ -7,7 +7,7 @@
 	public:
 		MOCK_METHOD(void, Credit, )
 }*/
-
+/*
 TEST(ACCOUUNT, All)
 {
     Account ac1(1000, 1000);
@@ -88,7 +88,7 @@ TEST(TRANSACTION, All)
 			std::string s2 = e.what();
 			EXPECT_EQ(s1, s2);
 		}
-/*
+
 		Transaction t2; //:: public t2;
 		t2.Credit(ac2, 1000);
 
@@ -96,5 +96,6 @@ TEST(TRANSACTION, All)
 
 		EXPECT_TRUE(t2.Debit(ac2, 800));
 		EXPECT_FALSE(t2.Debit(ac2, 800));
-*/
+
 }
+*/
