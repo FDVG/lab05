@@ -3,6 +3,9 @@
 #include <Account.h>
 #include <Transaction.h>
 
+#include <Account.cpp>
+#include <Transaction.cpp>
+
 /*class MockTransaction:public Transaction {
 	public:
 		MOCK_METHOD(void, Credit, )
