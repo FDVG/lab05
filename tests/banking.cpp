@@ -47,7 +47,7 @@ TEST(ACCOUUNT, All)
 
     ac1.Unlock();
 }
-/*
+
 TEST(TRANSACTION, All)
 {
 	
@@ -101,4 +101,3 @@ TEST(TRANSACTION, All)
 		EXPECT_FALSE(t2.Debit(ac2, 800));
 
 }
-*/
