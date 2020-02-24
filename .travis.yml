@@ -8,8 +8,7 @@ OS:
 before_install:
   - pip install --user cpp-coveralls
   
-script:
-- ./configure --enable-gcov && make && make check
+
 
 addons:
   apt:
@@ -20,6 +19,7 @@ addons:
       - g++-7
 
 script:
+- ./configure --enable-gcov && make && make check
 - sudo apt update
 - sudo apt install build-essential
 - sudo apt-get install manpages-dev
