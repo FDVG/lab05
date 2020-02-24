@@ -52,8 +52,3 @@ add_executable(check tests/banking.cpp)
 target_link_libraries(check gtest_main)
 add_test(NAME ACCOUUNT COMMAND check)
 add_test(NAME TRANSACTION COMMAND check)
-
-# Now simply link against gtest or gtest_main as needed. Eg
-#add_executable(example example.cpp)
-#target_link_libraries(example gtest_main)
-#add_test(NAME example_test COMMAND example)
