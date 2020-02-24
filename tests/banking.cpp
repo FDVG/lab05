@@ -7,7 +7,7 @@
 	public:
 		MOCK_METHOD(void, Credit, )
 }*/
-/*
+
 TEST(ACCOUUNT, All)
 {
     Account ac1(1000, 1000);
@@ -44,7 +44,7 @@ TEST(ACCOUUNT, All)
 
     ac1.Unlock();
 }
-
+/*
 TEST(TRANSACTION, All)
 {
 	
