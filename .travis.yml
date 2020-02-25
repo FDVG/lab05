@@ -37,3 +37,4 @@ after_success:
 - ls
 - cd _build
 - ls
+- ./check
