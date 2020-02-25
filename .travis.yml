@@ -32,4 +32,4 @@ script:
 - cd ..
 - cmake --build _build
 after_success:
-- coveralls --exclude lib --gcov-options '\-lp'
+- coveralls --exclude lib --exclude tests --gcov-options '\-lp'
