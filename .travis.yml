@@ -32,4 +32,4 @@ script:
 - cd ..
 - cmake --build _build
 after_success:
-- coveralls --root . -E ".*gtest.*" -E ".*CMakeFiles.*"
+- coveralls --verbose
