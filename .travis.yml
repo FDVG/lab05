@@ -33,6 +33,5 @@ script:
 - cmake --build _build
 
 after_success:
-    script:
-    - coveralls --exclude lib --exclude tests --gcov-options '\-lp'
-    - coveralls --verbose
+- coveralls --exclude lib --exclude tests --gcov-options '\-lp'
+- coveralls --verbose
