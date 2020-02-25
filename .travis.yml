@@ -19,6 +19,7 @@ addons:
       - g++-7
 
 script:
+- ./configure --enable-gcov
 - gcov --help
 - sudo apt update
 - sudo apt install build-essential
